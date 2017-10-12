@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="phrmc.model.UserModel" table="tb_user">
+        <id name="id" column="Id_User">
+            <generator class="assigned"/>
+        </id>
+        <property name="nama" column="Nama"/>
+        <property name="username" column="Username"/>
+        <property name="pass" column="Password"/>
+        <property name="alamat" column="Alamat"/>
+        <property name="telp" column="Telepon"/>
+        <property name="email" column="Email"/>
+    </class>
+  
+
+</hibernate-mapping>

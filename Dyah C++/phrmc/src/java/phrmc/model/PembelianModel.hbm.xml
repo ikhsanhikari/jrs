@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="phrmc.model.PembelianModel" table="tb_Pembelian">
+        <id column="Kode_Pembelian" name="kode">
+            <generator class="assigned"/>
+        </id>
+        <property name="id" column="Id_Obat"/>
+        <property name="id_supplier" column="Id_Supplier"/>
+        <property name="name" column="Nama_Obat"/>
+        <property name="tgl" column="Tanggal_Transaksi"/>
+        <property name="harga" column="Harga"/>
+        <property name="jumlah" column="Jumlah"/>
+        <property name="tot" column="Total"/>
+    </class>
+  
+
+</hibernate-mapping>

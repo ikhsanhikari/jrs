@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="phrmc.model.PersediaanMasukModel" table="tb_PersediaanMasuk">
+        <id name="kode" column="Kode_ObatMasuk">
+            <generator class="assigned"/>
+        </id>
+        <property name="id" column="ID_Obat"/>
+        <property name="tgl" column="Tanggal"/>
+        <property name="tot" column="Total"/>
+        <property name="harga" column="Harga"/>
+    </class>
+  
+
+</hibernate-mapping>

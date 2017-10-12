@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="phrmc.model.PersediaanModel" table="tb_persediaan">
+        
+        <id name="kode" column="Kode_Obat">
+            <generator class="assigned"/>
+        </id>
+        <property name="id" column="Kode_Pembelian"/>
+        <property name="tgl" column="Tanggal"/>
+        <property name="nama" column="Nama_Obat"/>
+        <property name="ket" column="Kategori"/>
+        <property name="tgl_kadaluarsa" column="Tanggal_Kadaluarsa"/>
+        <property name="harga_beli" column="Harga_Beli"/>
+        <property name="harga_jual" column="Harga_Jual"/>
+        <property name="jumlah" column="Jumlah"/>
+    </class>
+  
+
+</hibernate-mapping>
