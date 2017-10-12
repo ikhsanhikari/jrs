@@ -26,8 +26,8 @@
                     <td>${list.stok}</td>
                     <td>${list.tgl}</td>
                     <td>${list.kategori}</td>
-                    <c:url var="delete" value="/deleteList.htm">
-                        <c:param name="kode" value="${list.kode}"/>
+                    <c:url var="delete" value="/deleteObat.htm">
+                        <c:param name="id" value="${list.kode}"/>
                     </c:url>
                     <c:url var="update" value="/updateList.htm">
                         <c:param name="kode" value="${list.kode}"/>

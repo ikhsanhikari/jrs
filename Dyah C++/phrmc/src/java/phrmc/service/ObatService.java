@@ -16,6 +16,6 @@ import phrmc.model.ObatModel;
 public interface ObatService {
     public List<ObatDto> getlistObat();
     public void saveObat(ObatDto data);
-    public void deleteObat(String id);
-    public ObatModel getObatById(String id);
+    public void deleteObat(Integer id);
+    public ObatModel getObatById(Integer id);
 }

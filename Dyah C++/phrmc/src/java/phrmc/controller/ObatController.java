@@ -45,15 +45,12 @@ public class ObatController {
         map.addAttribute("obatDto", data);
         map.addAttribute("listObat", list);
         obatservice.saveObat(data);
-        return "index";
+        return "redirect:index.htm";
     }
     @RequestMapping(value = "/deleteObat", method = RequestMethod.GET)
     public String deleteObat(ModelMap map, ObatDto data,String id){
-        List<ObatDto> list = obatservice.getlistObat();
-        map.addAttribute("obatdto", data);
-        map.addAttribute("listObat", list);
-        obatservice.deleteObat(id);
+        obatservice.deleteObat(Integer.parseInt(id));
         return "redirect:index.htm";
-        }
+    }
 
 }

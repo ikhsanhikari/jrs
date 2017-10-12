@@ -31,18 +31,18 @@ public class ObatDaoImpl extends HibernateUtil implements ObatDao{
     }
 
     @Override
-    public void deleteObatModel(String id) {
+    public void deleteObatModel(Integer id) {
         ObatModel obat = new ObatModel();
-        obat.setKode(id);
+        obat.setKode(String.valueOf(id));
         
     }
 
     @Override
-    public ObatModel getObatById(String id) {
+    public ObatModel getObatById(Integer id) {
         ObatModel obat = new ObatModel();
         String sql = "select model from ObatModel model where id=:id1";
         Query q=createQuery(sql).setParameter("id1",id);
         return (ObatModel) q.uniqueResult();    
     }
-    
 }
+    

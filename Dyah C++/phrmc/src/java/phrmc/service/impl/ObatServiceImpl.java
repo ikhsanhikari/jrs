@@ -56,12 +56,12 @@ public class ObatServiceImpl implements ObatService {
     }
 
     @Override
-    public void deleteObat(String id) {
+    public void deleteObat(Integer id) {
         obatdao.deleteObatModel(id);
     }
 
     @Override
-    public ObatModel getObatById(String id) {
+    public ObatModel getObatById(Integer id) {
         ObatModel obat = new ObatModel();
         obat = obatdao.getObatById(id);
         return obat;
